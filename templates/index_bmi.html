@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        {% if BMI %}
+        <h2>Yor BMI: {{BMI[:4]}}</h2>
+        {% endif %}
+        <form action = 'http://127.0.0.1:5000/calc' method ='post'>
+        <h2>BMI-Calculator</h2>
+        <p>Height in cm:</p>
+        <p><input type = 'text' name = 'height' /></p>
+        <p>Weight in kg:</p>
+        <p><input type = 'text' name = 'weight' /></p>
+        <p><input type = 'submit' value = 'submit' /></p>
+        </form>
+    </body>
+</html>
